@@ -1,0 +1,117 @@
+📖 Descripción
+
+Sistema web desarrollado para la gestión y control de inventario farmacéutico en droguerías o farmacias.
+La aplicación permite registrar medicamentos, administrar precios, calcular automáticamente valores unitarios según la cantidad de unidades por caja y mantener un control organizado del inventario.
+
+El proyecto fue diseñado con una interfaz moderna, limpia y responsiva, enfocada en mejorar la experiencia de administración y facilitar el manejo de medicamentos dentro de un entorno farmacéutico.
+
+✨ Características Clave
+💊 Registro y administración de medicamentos.
+📦 Control de inventario mediante el campo de cantidad.
+🧾 Cálculo automático del precio unitario.
+🏷️ Clasificación de medicamentos por categorías.
+🧪 Diferenciación de medicamentos por presentación:
+Tabletas
+Cápsulas
+Jarabes
+Inhaladores
+Cremas
+📅 Gestión de fechas de vencimiento en formato español (dd/mm/aaaa).
+🚫 Validación para evitar precios o cantidades negativas.
+📱 Diseño responsive adaptable a dispositivos móviles.
+🎨 Interfaz moderna utilizando Bootstrap 5.
+⚡ Actualización dinámica de datos mediante JavaScript y Node.js.
+🛠️ Tecnologías Utilizadas
+Frontend
+HTML5
+CSS3
+Bootstrap 5
+JavaScript Vanilla
+Backend
+Node.js
+Express.js
+Base de Datos
+MySQL
+Herramientas
+Visual Studio Code
+MySQL Workbench
+Git & GitHub
+📂 Estructura del Proyecto
+drogueria/
+│
+├── node_modules/
+│
+├── public/
+│   ├── index.html
+│   ├── app.js
+│   ├── styles.css
+│   └── imagen/
+│       └── logo.png
+│
+├── server.js
+├── package.json
+└── README.md
+⚙️ Instalación y Uso
+1️⃣ Clonar el repositorio
+git clone https://github.com/tu-usuario/drogueria.git
+2️⃣ Entrar al proyecto
+cd drogueria
+3️⃣ Instalar dependencias
+npm install
+
+O manualmente:
+
+npm install express mysql2 cors
+4️⃣ Configurar la base de datos
+
+Abrir MySQL Workbench y ejecutar:
+
+CREATE DATABASE drogueria_db;
+
+Luego importar o ejecutar el script SQL del proyecto.
+
+5️⃣ Configurar conexión MySQL
+
+Editar el archivo:
+
+server.js
+
+y configurar:
+
+const conexion = mysql.createConnection({
+
+  host: 'localhost',
+
+  user: 'root',
+
+  password: 'TU_PASSWORD',
+
+  database: 'drogueria_db'
+});
+6️⃣ Ejecutar el servidor
+node server.js
+
+o con nodemon:
+
+npx nodemon server.js
+7️⃣ Abrir en el navegador
+http://localhost:3000
+🖼️ Capturas de Pantalla / Demostración
+Dashboard Principal
+[Aquí puedes agregar una captura del sistema]
+Formulario de Registro
+[Aquí puedes agregar una captura del formulario]
+Tabla de Inventario
+[Aquí puedes agregar una captura del inventario]
+🚀 Funcionalidades Futuras
+🔐 Sistema de autenticación y login.
+📊 Dashboard estadístico.
+📉 Alertas de inventario bajo.
+⏰ Alertas de vencimiento.
+🧾 Facturación y ventas.
+📤 Exportación de reportes PDF/Excel.
+🔎 Búsqueda avanzada de medicamentos.
+👨‍💻 Autor
+
+Desarrollado por Junior
+📌 Proyecto académico / portafolio profesional.

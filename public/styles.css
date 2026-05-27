@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+
+  --primary: #1597e5;
+  --primary-dark: #0f6cab;
+
+  --secondary: #7cd1d1;
+
+  --accent: #ff9f1c;
+
+  --background: #e8f7fa;
+
+  --card: rgba(255,255,255,.88);
+
+  --text: #12344d;
+
+  --shadow:
+  0 10px 30px rgba(0,0,0,.12);
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+  font-family: 'Poppins', sans-serif;
+
+  background:
+  linear-gradient(
+    135deg,
+    #dff7ff 0%,
+    #e9fbff 40%,
+    #f4fdff 100%
+  );
+
+  min-height: 100vh;
+
+  color: var(--text);
+
+  overflow-x: hidden;
+}
+
+/* =========================
+   EFECTOS FONDO
+========================= */
+
+body::before{
+
+  content: '';
+
+  position: fixed;
+
+  width: 400px;
+  height: 400px;
+
+  background:
+  radial-gradient(
+    circle,
+    rgba(21,151,229,.18),
+    transparent 70%
+  );
+
+  top: -120px;
+  left: -120px;
+
+  z-index: -1;
+}
+
+body::after{
+
+  content: '';
+
+  position: fixed;
+
+  width: 350px;
+  height: 350px;
+
+  background:
+  radial-gradient(
+    circle,
+    rgba(255,159,28,.15),
+    transparent 70%
+  );
+
+  bottom: -100px;
+  right: -100px;
+
+  z-index: -1;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.hero-img{
+
+  width: 150px;
+
+  margin-bottom: 20px;
+
+  filter:
+  drop-shadow(
+    0 10px 20px rgba(0,0,0,.15)
+  );
+
+  transition: .4s;
+}
+
+.hero-img:hover{
+
+  transform:
+  scale(1.05)
+  rotate(3deg);
+}
+
+.hero h1{
+
+  font-size: 3rem;
+
+  font-weight: 700;
+
+  color: var(--primary-dark);
+
+  margin-bottom: 10px;
+}
+
+.hero p{
+
+  color: #4f6f85;
+
+  font-size: 1.1rem;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+
+  border: none;
+
+  border-radius: 28px;
+
+  background: var(--card);
+
+  backdrop-filter: blur(15px);
+
+  box-shadow: var(--shadow);
+
+  overflow: hidden;
+
+  transition: .4s;
+}
+
+.card:hover{
+
+  transform: translateY(-4px);
+
+  box-shadow:
+  0 15px 40px rgba(21,151,229,.18);
+}
+
+.card-body{
+
+  padding: 35px;
+}
+
+/* =========================
+   TITULOS
+========================= */
+
+h3{
+
+  font-weight: 600;
+
+  color: var(--primary-dark);
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.form-control{
+
+  border-radius: 16px;
+
+  border: 2px solid transparent;
+
+  background: rgba(255,255,255,.9);
+
+  padding: 14px 18px;
+
+  font-size: .95rem;
+
+  transition: .3s;
+}
+
+.form-control:focus{
+
+  border-color: var(--primary);
+
+  box-shadow:
+  0 0 0 5px rgba(21,151,229,.15);
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   BOTON
+========================= */
+
+.btn-primary{
+
+  background:
+  linear-gradient(
+    135deg,
+    var(--primary),
+    #38bdf8
+  );
+
+  border: none;
+
+  border-radius: 16px;
+
+  padding: 15px;
+
+  font-weight: 600;
+
+  letter-spacing: .5px;
+
+  transition: .4s;
+}
+
+.btn-primary:hover{
+
+  background:
+  linear-gradient(
+    135deg,
+    var(--primary-dark),
+    var(--primary)
+  );
+
+  transform:
+  translateY(-3px);
+
+  box-shadow:
+  0 10px 25px rgba(21,151,229,.35);
+}
+
+/* =========================
+   TABLA
+========================= */
+
+.table-responsive{
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.table{
+
+  margin-bottom: 0;
+
+  background: white;
+}
+
+.table thead{
+
+  background:
+  linear-gradient(
+    135deg,
+    var(--primary-dark),
+    var(--primary)
+  );
+
+  color: white;
+}
+
+.table thead th{
+
+  border: none;
+
+  padding: 18px;
+
+  font-weight: 600;
+
+  font-size: .95rem;
+}
+
+.table tbody tr{
+
+  transition: .3s;
+}
+
+.table tbody tr:hover{
+
+  background: #eef9ff;
+
+  transform: scale(1.01);
+}
+
+.table td{
+
+  padding: 18px;
+
+  vertical-align: middle;
+
+  border-color: #eef5f7;
+
+  color: #4a6577;
+}
+
+/* =========================
+   BOTONES TABLA
+========================= */
+
+.btn-warning{
+
+  background: var(--accent);
+
+  border: none;
+
+  color: white;
+}
+
+.btn-warning:hover{
+
+  background: #ff8800;
+}
+
+.btn-danger{
+
+  background: #ff4d6d;
+
+  border: none;
+}
+
+.btn-danger:hover{
+
+  background: #e63956;
+}
+
+/* =========================
+   ALERTAS
+========================= */
+
+.alert{
+
+  border: none;
+
+  border-radius: 16px;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.15);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+  .hero h1{
+
+    font-size: 2.2rem;
+  }
+
+  .card-body{
+
+    padding: 22px;
+  }
+
+  .table{
+
+    min-width: 1000px;
+  }
+}
