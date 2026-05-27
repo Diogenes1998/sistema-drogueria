@@ -219,8 +219,8 @@ _Aquí puedes agregar una captura del inventario._
 
 ---
 
-# 👨‍💻 Autor
+# 👨‍💻 Autores
 
 Desarrollado por **Diogenes Bermeo Sanchez** Y **Erika Andrea Erazo Rodriguez** 🚀
 
-📌 Proyecto académicO.
+📌 Proyecto académico.
