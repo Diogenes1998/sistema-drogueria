@@ -187,25 +187,6 @@ http://localhost:3000
 
 ---
 
-# 🖼️ Capturas de Pantalla / Demostración
-
-## 🏠 Dashboard Principal
-
-_Aquí puedes agregar una captura del sistema._
-
----
-
-## 📝 Formulario de Registro
-
-_Aquí puedes agregar una captura del formulario._
-
----
-
-## 📦 Tabla de Inventario
-
-_Aquí puedes agregar una captura del inventario._
-
----
 
 # 🚀 Funcionalidades Futuras
 
