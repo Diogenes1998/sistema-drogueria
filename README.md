@@ -202,6 +202,6 @@ http://localhost:3000
 
 # 👨‍💻 Autores
 
-Desarrollado por **Diogenes Bermeo Sanchez** Y **Erika Andrea Erazo Rodriguez** 🚀
+Desarrollado por **Diogenes Bermeo Sanchez** 🚀
 
 📌 Proyecto académico.
